@@ -4,11 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
 
+
+    <header class="header">
+
+      <div class="header-container container">
+
+        <div class="header-box">
+
+       
+
+        <a class="logo" href="">
+          <svg class="icon" width="69" height="55">
+          <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+
+
+        <div class="header-menu" data-menu>
+          <nav class="nav-menu"> 
+              <ul class="nav-header list">
+                <li class="nav-item"><a href="" class="nav-link">О нас</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Услуги и цены</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Мастера</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+
+                </ul>
+          </nav>
+
+        
+
+          <div class="signup">
+            <button class="header-btn-tablet" type="button">онлайн-запись</button>
+            <a class="header-phone" href="tel:+380441111111">+38 044 111 11 11</a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <button class="mobile-button is-open" type="button">
+          <svg class="icon" width="40" height="40">
+          <use class="icon-close-mobile " href="./images/sprite.svg#mobile-menu"></use>
+          <use class="icon-open-mobile" href="./images/sprite.svg#mobile-close"></use>
+          </svg>
+        </button>
+      </div>
+      </div>
+
+      
+      
+    </header>
+
+    <main class="main">
+      
+      <!-- <section class="sidebar"></section> -->
+      <!-- <div class="sidebar"></div> -->
+      <section class="hero-section container">
+        
+        <div class="hero-slider-box">
+          <div class="hero-slider-dash active-dash"></div>
+          <div class="hero-slider-dash"></div>
+          <div class="hero-slider-dash"></div>
+        </div>
+
+       <div class="hero-content-box">
+          
+          <div class="hero-box-info">
+            <div class="hero-line"></div>
+            <p class="hero-info">A hair salon for men in Kyiv</p>
+          </div>
+           
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-about">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+        
+          
+        </div>
+
+        
+        
+
+
+
+      </section>
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <!-- <include src="./partials/example.html"></include> -->
+    <script src="./js/menu.js"></script>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
