@@ -1,6 +1,7 @@
 body
 {
     font-family: $main-font-family;
+    background:$primery-bg-color;
     
 }
 
@@ -25,8 +26,7 @@ img
     width: 480px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 31px;
-    padding-right: 31px;
+   
 
     // @media screen and (min-width: $mobile) {
     //     width: $mobile;
