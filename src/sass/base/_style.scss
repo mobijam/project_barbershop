@@ -1,7 +1,7 @@
 body
 {
     font-family: $main-font-family;
-    background:$primery-bg-color;
+   
     
 }
 
@@ -26,6 +26,8 @@ img
     width: 480px;
     margin-left: auto;
     margin-right: auto;
+   
+
    
 
     // @media screen and (min-width: $mobile) {
@@ -71,3 +73,6 @@ img
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
+

@@ -13,17 +13,17 @@
 {
     position: absolute;
     
-    left: 34px;
+    left: 15px;
     display: flex;
     justify-content: space-between;
     z-index: 1;
     
     @media screen and (max-width:$mobile-top){
-        right: 31px;
+        right: 15px;
     }
     
     @media screen and (min-width:$desctop){
-        left: 39px;
+        left: 15px;
         align-items: center;
     }
     top: 40px;
@@ -78,30 +78,59 @@
 .nav-menu
 {
     margin-right: 47px;
+    @media screen and (min-width: $tablet){
+        margin-right: 103px;}
+
+    @media screen and (min-width: $desctop){
+        margin-right: 388px;}
+
 }
+
 .nav-item:not(:last-child)
 {
     margin-right: 24px;
+
+    @media screen and (min-width:$desctop){
+        margin-right: 40px;
+    }
 }
 
 .nav-link
 {
     color:$main-text-color;
+    text-decoration: none;
+    font-size: $secondary-font-size;
+    line-height: $secondary-line-height;
 }
 
 .signup
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     @media screen and (min-width:$desctop) {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
    
 }
 
 .header-btn-tablet
 {
+    color: $btn-main-color;
+  background-color: transparent;
+  font-weight: $font-weight-semi-bold;
+  font-size: $btn-font-size;
+  line-height: $btn-line-height;
+  font-weight:  $font-weight-semi-bold;
+  letter-spacing: $btn-letter-spacing;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid #ff6c00;
+  width: 160px;
+  height: 44px;
+  padding: 12px 20px;
+//  
     @media screen and (max-width:$tablet-top) {
         margin-bottom: 20px;
     }
@@ -110,25 +139,69 @@
 
 .header-phone
 {
-    color: white;
+    color: $main-text-color;
+    font-size: $secondary-font-size;
+    line-height: $secondary-line-height;
+    font-weight:  $font-weight-semi-bold;
+    @media screen and (min-width:$desctop){
+        margin-right: 40px;
+        
+    }
 }
 
 // main
 .hero-section
 {
     position: relative;
+    padding-top: 208px;
+    padding-left: 15px;
+    padding-right: 15px;
+
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider3-480-min.jpg);
-   padding-left: 31px;
-   padding-right: 31px;
-   background-size: cover;
-   padding-top: 208px;
-   padding-bottom: 183px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+   
+        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider3-2x-960-min.jpg);}
+
+
+
+   @media screen and (max-width:$mobile-top){
+       padding-bottom: 183px;}
+
+
+
    @media screen and (min-width:$tablet){
-       
+      
+       padding-top: 272px;
+       padding-bottom: 40px;
        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider3-609-min.jpg);
        width: 100%;
        
-   }
+           @media screen and (min-device-pixel-ratio: 2),
+                  screen and (min-resolution: 192dpi),
+                  screen and (min-resolution: 2dppx){
+
+                 background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider3-2x-1218-min.jpg);}
+        }
+
+   @media screen and (min-width:$desctop){
+       
+       object-fit: contain;
+       background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider3-1125-min.jpg);
+          
+       @media screen and (min-device-pixel-ratio: 2),
+           screen and (min-resolution: 192dpi),
+           screen and (min-resolution: 2dppx){
+           background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider3-2x-2250-min.jpg);
+           width: 100%;
+        }
+         }
     
     
 }
@@ -136,6 +209,15 @@
 .hero-content-box
 {
     width: 306px;
+    @media screen and (min-width: $tablet){
+        width: 355px;
+        margin-left: 120px;
+        margin-bottom: 181px;
+    }
+
+    @media screen and (min-width: $desctop)
+    {margin-left: 100px;}
+    
 }
 .hero-box-info
 {
@@ -208,8 +290,11 @@ margin-bottom: 12px;
 .hero-slider-box
 {
    position: absolute;
-   right: 31px;
+   right: 15px;
    top: 275px;
+   @media screen and (min-width:$tablet) {
+       top: 325px;
+   }
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -307,6 +392,8 @@ margin-bottom: 12px;
         height: 680px;
         background-color: $main-bg-color;
         margin-right: 30px;
+        align-items: center;
+        justify-content: center;
     }
 }
    
@@ -315,7 +402,109 @@ margin-bottom: 12px;
 {
     @media screen and (min-width:$tablet){
         display: flex;
-        padding-right: 31px;
-        padding-left: 31px;
+       
     }
 }
+
+.sidebar-box
+{
+    display: flex;
+    margin-top: 370px;
+    transform: rotate(-90deg);
+    align-items: center;
+
+    
+    
+
+}
+
+.sidebar-list
+{
+    display: flex;
+   
+
+}
+
+.sidebar-link
+{
+    text-decoration: none;
+}
+
+.sidebar-hero-line
+{
+   
+    margin: 0px 40px 0px 0px;
+}
+
+.hero-slider-btn
+{
+    display: none;
+    @media screen and (min-width:$tablet){
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px;
+
+    }
+   
+}
+.sidebar-item:not(:last-child)
+{
+margin-right: 40px;
+}
+
+
+.sidebar-text{
+ color: $title-text-color;
+}
+
+
+.slayder-btn-check
+{
+    background-color: transparent;
+    color: $subtitle-text-color;
+    border: none;
+    
+    border-bottom: 1px solid$subtitle-text-color;
+    padding-bottom: 10px;
+}
+
+.btn-next
+{
+    padding-right: 22px;
+}
+
+.btn-back
+{
+margin-left: 26px;
+padding-left: 22px;
+
+}
+
+.bis 
+{
+    background-color: red;
+    height: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+// test
+
+
+.box
+   {
+   
+    
+    background-image: url(../images/img-4.png);
+    background-color:#111319;;
+    width: 480px;
+    height: 800px;
+  
+    }
+
+
+
+
+
