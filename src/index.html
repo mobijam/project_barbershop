@@ -3,47 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <title>Заголовок страницы</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <section class="best-barber">
-      <div>
-        <div class="best-barber-img-block"></div>
-
-        <div class="best-barber-text-block">
-          <div class="block-one">
-            <span class="dash"></span>
-            <h1 class="teg-up">О НАС</h1>
+    <section class="best-barber" name="best-barber">
+      <div class="container">
+        <div class="b-b-box">
+          <div class="img-block">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/barb1-330-min.jpg 330w, ./images/barb1-2x-660-min.jpg 330px" sizes="(min-width: 768px) 100vw">
+            <source media="(min-width: 1200px)" srcset="./images/barb1-270-min.jpg 270w, ./images/barb1-2x-540-min.jpg 270px" sizes="(min-width: 1200px) 25vw">
+            <img class="img-block-pic" src="./images/barb1-270-min.jpg" alt="shaving process"/>
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/barb2-330-min.jpg 330w, ./images/barb2-2x-660-min.jpg 330px" sizes="(min-width: 768px) 100vw">
+            <source media="(min-width: 1200px)" srcset="./images/barb2-270-min.jpg 270w, ./images/barb2-2x-540-min.jpg 270px" sizes="(min-width: 1200px) 25vw">
+            <img class="img-block-pic" src="./images/barb2-270-min.jpg" alt="shaving process"/>
+          </picture>
           </div>
-
-          <h2 class="best-barber-text-block-one">
-            Лучший Барбершоп твоего города
-          </h2>
-          <ul class="best-barber-text-block-ul">
-            <li class="best-barber-text-block-two">
-              Если ты хочешь добавить в свой образ больше уверенности – тебе
-              точно к нам.
-            </li>
-            <li class="best-barber-text-block-three">
-              Мы команда, которая никогда не останавливается на достигнутом и
-              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-              никогда не сможешь быть прежним. Мы команда, которая всегда с
-              клиентами "на одной волне". Поэтому, мы всегда готовы
-              усовершенствовать каждого, кто к нам приходит!
-            </li>
-            <li></li>
-          </ul>
+          <div class="text-block">
+          <span class="dash"></span><p class="best-barber-sub-title">О НАС</p>
+          <h2 class="best-barber-title">Лучший Барбершоп твоего города</h2>
+            <p class="best-barber-feature">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+            <p class="best-barber-feature">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+            <button type="button" class="button-online" data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
+          </div>
         </div>
-        <button class="button-online" data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
       </div>
     </section>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
