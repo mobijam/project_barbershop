@@ -7,6 +7,25 @@ body
 
 
 
+a 
+{
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+
+
+
 img
 {
     display: block;
@@ -26,18 +45,12 @@ img
     width: 480px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
    
-
-   
-
-    // @media screen and (min-width: $mobile) {
-    //     width: $mobile;
-    // }
-
     @media screen and (min-width: $tablet) {
         width: $tablet;
-        margin-left: auto;
-        margin-right: auto;
+        
     }
 
     @media screen and (min-width: $desctop) {
