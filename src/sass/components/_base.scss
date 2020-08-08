@@ -33,7 +33,7 @@ section {
   margin: 0 auto;
 }
 
-// Верхняя часть секции
+// Верхняя часть секции с тире (sub-title)
 
 .dash {
   display: inline-flex;
@@ -55,22 +55,11 @@ section {
   //   margin-bottom: 20px;
 
   color: $title-text-color;
-
   font-weight: $font-weight-semi-bold;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.traditional-school-title {
-  font-family: Raleway;
-  font-weight: $font-weight-bold;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-
-  color: $title-text-color;
 }
 
 .positioning-sub-title {
@@ -79,14 +68,3 @@ section {
   align-items: center;
   margin-bottom: 20px;
 }
-
-.traditional-school-text {
-  margin-bottom: 44px;
-  font-weight: $font-weight-normal;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: $primery-text-color;
-}
-
-// список преимуществ
