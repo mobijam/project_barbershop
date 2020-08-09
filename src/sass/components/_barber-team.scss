@@ -16,7 +16,7 @@ ul {
 
 img {
   display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -24,12 +24,12 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: 480px) {
-      width: 480px;  
+  @media screen and (min-width: 448px) {
+      width: 448px;  
   }
 
-  @media screen and (min-width: 768px) {
-      width: 768px;  
+  @media screen and (min-width: 720px) {
+      width: 720px;  
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,12 +40,12 @@ img {
 }
 
 .team-box {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 448px) and (max-width: 719px) {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 720px) and (max-width: 1199px) {
     padding-left: 144px;
     padding-right: 144px;  
   } 
@@ -82,7 +82,7 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 447px) {
     font-size: 7px;
   }
 }
@@ -95,7 +95,7 @@ img {
   height: 1px;
   background-color: $title-text-color;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 447px) {
     width: 30px;
     margin-right: 10px;
     margin-bottom: 2px;
@@ -116,7 +116,7 @@ img {
 
   text-align: left;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 447px) {
     font-size: 32px;
   }
 }
@@ -160,6 +160,7 @@ img {
 //  Имя сотрудника
 .master-name {
   margin-bottom: 8px;
+  margin-top: 0px;
 
   color: $title-text-color;
 
