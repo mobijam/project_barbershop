@@ -45,10 +45,10 @@ img {
 }
 
 .b-b-box {
-  @media screen and (min-width: 448px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  // @media screen and (min-width: 448px) {
+  //   padding-left: 16px;
+  //   padding-right: 16px;
+  // }
 
   @media screen and (min-width: 720px) and (max-width: 1199px) {
     display: flex;
