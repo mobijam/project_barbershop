@@ -6,10 +6,6 @@
 // Стили для файла с примером HTML-фрагмента
 
 
-
-
-
-
-
-
-@import "./barber-portfolio";
+@import "./utils/module";
+@import "./components/module";
+@import "./base/module";
