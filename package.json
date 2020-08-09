@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Somelier4ik.github.io/project_barbershop",
+
+  "homepage": "https://oleksandrhrubyi.github.io//project_barbershop",
+
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
