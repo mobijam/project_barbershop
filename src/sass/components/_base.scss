@@ -4,6 +4,13 @@ body {
   font-family: Open Sans;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,11 +32,12 @@ img {
 }
 
 section {
-  padding: 84px 31px;
+  padding: 84px 0;
 }
 
 .container {
-  max-width: 418px;
+  width: 448px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
