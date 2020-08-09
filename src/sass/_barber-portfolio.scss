@@ -154,3 +154,76 @@ img
     overflow: hidden;
 }
 
+// Секция мастеров
+.team {
+    background-color: $accent-bg-color;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  
+    @media screen and (min-width: $tablet) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+  }
+  
+  // Заголовок секции
+  .team-sub-title {
+    display: inline-flex;
+    margin-top: 0;
+    margin-bottom: 20px;
+  
+    color: $title-text-color;
+  
+    font-weight: $font-weight-semi-bold;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    @media screen and (max-width: 479px) {
+      font-size: 7px;
+    }
+  }
+  
+  .dash{
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: $title-text-color;
+  
+    @media screen and (max-width: 479px) {
+      width: 30px;
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+  }
+
+  .team-list {
+    @media screen and (max-width: 1199px) {
+      .master-card {
+        margin-bottom: 64px;
+      }
+    }
+  
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+  
+        .master-card:not(:last-child){
+          margin-right: 30px;
+        }
+  
+        .master-card {
+          width: calc((100% - 2 * 30px) / 3);
+        }
+    }
+  }
