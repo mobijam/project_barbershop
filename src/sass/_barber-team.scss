@@ -20,31 +20,44 @@ img {
     height: auto;
 }
 
-// Контейнер секции
-.container-team {
+.container {
   padding-left: 15px;
   padding-right: 15px;
-  
 
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-    padding-left: 31px;
-    padding-right: 31px;
-    
+  @media screen and (min-width: 480px) {
+      width: 480px;  
   }
 
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-    padding-left: 159px;
-    padding-right: 159px;
+  @media screen and (min-width: 768px) {
+      width: 768px;  
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto; 
+  }    
 }
+
+.team-box {
+  @media screen and (min-width: 480px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 144px;
+    padding-right: 144px;  
+  }
+
+  @media screen and (min-width: 1200px) {
+  padding-left: 40px;
+  padding-right: 40px;
+  }    
+}
+
+// Контейнер секции
+
 // Секция мастеров
 .team {
   background-color: $accent-bg-color;
@@ -117,13 +130,13 @@ img {
 
 // Офофрмление списка сотрудников
 .team-list {
-  @media screen and (max-width: 1169px) {
+  @media screen and (max-width: 1199px) {
     .master-card {
       margin-bottom: 64px;
     }
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -147,18 +160,8 @@ img {
   img {
     margin-right: 0;
     margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
-    width: 418px;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 370px
+    height: 100%;
+    object-fit: cover;
   }
 
 }
