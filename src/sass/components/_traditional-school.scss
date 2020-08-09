@@ -33,12 +33,30 @@ img {
 
 section {
   padding: 84px 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: $desctop) {
+    height: 582px;
+  }
 }
 
 .container {
   width: 448px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desctop) {
+    position: relative;
+    width: $desctop;
+    height: 382px;
+  }
 }
 
 .dash {
@@ -77,6 +95,17 @@ section {
 
 // Заголовок + параграф
 
+.traditional-school-box-title {
+  @media screen and (min-width: $tablet) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 30px;
+    margin-left: 640px;
+  }
+}
+
 .traditional-school-title {
   margin-bottom: 20px;
   font-family: Raleway;
@@ -97,16 +126,29 @@ section {
   color: $primery-text-color;
 }
 
-// список преимуществ
+// список преимуществ в иконках
 
 .advantages-box {
+  position: absolute;
   height: 331px;
+
+  @media screen and (min-width: $desctop) {
+    left: 140px;
+    top: 21px;
+  }
 }
 
 .advantages-list {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    left: 239px;
+  }
+
+  @media screen and (max-width: $tablet-top) {
+    position: absolute;
+  }
 }
 
 .advantages-item {
@@ -146,7 +188,7 @@ section {
 .advantages-plus {
   margin-bottom: 22px;
   margin-left: 2px;
-  fill: #ff6c00;
+  fill: $accent-color;
 }
 
 .advantages-text {
