@@ -1,0 +1,200 @@
+// Общие стили
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 84px 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 100px 0;
+  }
+
+  @media screen and (min-width: $desctop) {
+    height: 582px;
+  }
+}
+
+.container {
+  width: 448px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desctop) {
+    position: relative;
+    width: $desctop;
+    height: 382px;
+  }
+}
+
+.dash {
+  display: inline-flex;
+  //   margin-bottom: 5px;
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: $title-text-color;
+
+  //   @media screen and (max-width: 479px) {
+  //     width: 30px;
+  //     margin-right: 10px;
+  //     margin-bottom: 2px;
+  //   }
+}
+
+.sub-title {
+  display: inline-flex;
+  //   margin-bottom: 20px;
+
+  color: $title-text-color;
+  font-weight: $font-weight-semi-bold;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.positioning-sub-title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+// Заголовок + параграф
+
+.traditional-school-box-title {
+  @media screen and (min-width: $tablet) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 30px;
+    margin-left: 640px;
+  }
+}
+
+.traditional-school-title {
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: $font-weight-bold;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: $title-text-color;
+}
+
+.traditional-school-text {
+  margin-bottom: 44px;
+  font-weight: $font-weight-normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $primery-text-color;
+}
+
+// список преимуществ в иконках
+
+.advantages-box {
+  position: absolute;
+  height: 331px;
+
+  @media screen and (min-width: $desctop) {
+    left: 140px;
+    top: 21px;
+  }
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    left: 239px;
+  }
+
+  @media screen and (max-width: $tablet-top) {
+    position: absolute;
+  }
+}
+
+.advantages-item {
+  position: absolute;
+  width: 193px;
+  height: 133px;
+  padding: 20px 33px;
+  text-align: center;
+  background: $accent-bg-color;
+
+  &:nth-child(2) {
+    left: 223px;
+    top: 35px;
+  }
+
+  &:nth-child(3) {
+    top: 163px;
+  }
+
+  &:nth-child(4) {
+    top: 198px;
+    left: 223px;
+  }
+}
+
+.advantages-number {
+  display: inline-flex;
+  margin-bottom: 6px;
+  font-weight: $font-weight-bold;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $title-text-color;
+}
+
+.advantages-plus {
+  margin-bottom: 22px;
+  margin-left: 2px;
+  fill: $accent-color;
+}
+
+.advantages-text {
+  font-weight: $font-weight-semi-bold;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: $title-text-color;
+}
