@@ -50,15 +50,16 @@ img {
     padding-right: 16px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     padding-left: 24px;
     padding-right: 24px;  
   }
 
   @media screen and (min-width: 1200px) {
-  padding-left: 40px;
-  padding-right: 40px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }    
 }
 
@@ -72,32 +73,45 @@ img {
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    
+    display: flex; 
     margin-right: 64px;
   }
 }
 
 .img-block-pic {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 30px;
+    img {
+      margin-bottom: 30px;
+    }
+
+    .shaving-pic {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-right: 30px;
+
+    & + & {
+      margin-right: 0;
+    }
   }
 }
 
 .text-block {
+  width: 418px;
+
   @media screen and (min-width: 768px) {
-    max-width: 330px;
+    width: 330px;
+    
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 500px;
+    width: 500px;
   }
 }
+
 
 // Заголовок секции
 .best-barber-sub-title {
@@ -153,11 +167,14 @@ img {
 }
 
 .best-barber-feature {
+  display: inline-block;
   margin-bottom: 20px;
+  
 
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.02em;
+  text-align: left;
   
 
   color: $primery-text-color;
