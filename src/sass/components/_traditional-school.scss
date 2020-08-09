@@ -128,15 +128,19 @@ img {
 
 // список преимуществ в иконках
 
-.advantages-box {
-  position: absolute;
-  height: 331px;
 
+.advantages-box {
+  height: 331px;
+  @media screen and (min-width: $tablet) {
+    position: relative;
+  }
   @media screen and (min-width: $desctop) {
+    position: absolute;
     left: 140px;
     top: 21px;
   }
 }
+
 
 .advantages-list {
   display: flex;
