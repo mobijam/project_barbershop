@@ -4,11 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
-
+    <section class="part-prices">
+      <div class="container-prices">
+        <span class="dash"></span>
+        <p class="text">Проведи время в компании лучших мастеров</p>
+        <h2 class="service-title">Услуги и цены</h2>
+        <ul class="list-services">
+          <li class="service">
+            Мужская стрижка<span class="line"></span> от 300 грн.
+          </li>
+          <li class="service">
+            Стрижка бороды <span class="line"></span> от 200 грн.
+          </li>
+          <li class="service">
+            Стрижка усов <span class="line"></span> от 200 грн.
+          </li>
+          <li class="service">
+            Бритье опасной бритвой <span class="line"></span> от 200 грн.
+          </li>
+          <li class="service">
+            Стрижка у стажера <span class="line"></span> от 50 грн.
+          </li>
+          <li class="service">
+            Стрижка под насадку <span class="line"></span> от 200 грн.
+          </li>
+          <li class="service">
+            Детская стрижка(до 12 лет) <span class="line"></span> от 300 грн.
+          </li>
+          <li class="service">
+            Комуфлирование седины <span class="line"></span> от 200 грн.
+          </li>
+        </ul>
+        <button class="button-online">Онлайн-запись</button>
+      </div>
+    </section>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
