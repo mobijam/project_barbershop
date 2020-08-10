@@ -1,0 +1,199 @@
+.section.part-prices {
+  margin: 0 auto;
+  background-image: url(../images/prices-mobile.png);
+  background-color: #111319;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 84px;
+}
+
+@media screen and (min-width: $desctop) {
+  .part-prices {
+    background-image: url(../images/prices-desctop.png);
+  }
+}
+@media screen and (min-width: 769px) {
+  .part-prices {
+    max-width: 1280px;
+    background-image: url(../images/prices-tablet.png);
+  }
+}
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: $desctop) {
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.container.prices {
+  text-align: center;
+}
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 767px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+@media screen and (min-width: $desctop) {
+  .container {
+    max-width: $desctop;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+// Заголовок
+.service-title,
+.text.prices {
+  text-align: left;
+}
+.text {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  margin-top: 0;
+  font-family: $main-font-family;
+  font-weight: $font-weight-semi-bold;
+  font-size: 11px;
+  color: $subtitle-text-color;
+  font-style: normal;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: $subtitle-text-color;
+  }
+}
+.service-title {
+  margin-top: 0px;
+  margin-bottom: 44px;
+  font-family: $title-font-family;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  color: #ffffff;
+  text-align: left;
+}
+.prices-box {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1279px) {
+  .prices-box {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .prices-box {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .price-list.light {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .prices-box {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .price-list.light {
+    background: linear-gradient(180deg, #171a24, rgba(23, 26, 36, 0.2));
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price-list.darker {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price-list {
+    width: 50%;
+    padding: 30px 40px;
+  }
+}
+
+.service {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.14;
+  color: $secondary-text-color;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.price-item-title {
+  text-align: left;
+}
+.underline {
+  height: 1px;
+  flex-grow: 1;
+  margin: 0 6px;
+  background-color: $subtitle-text-color;
+}
+
+//Кнопка
+.button-online {
+  display: inline-block;
+  padding: 11px;
+  color: $main-text-color;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  line-height: 1.33;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 1px solid $accent-color;
+  min-width: 160px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  transition: background-color 250ms $main-transition-timing;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $accent-color;
+  }
+}
