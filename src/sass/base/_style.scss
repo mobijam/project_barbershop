@@ -1,0 +1,94 @@
+body
+{
+    font-family: $main-font-family;
+   
+    
+}
+
+
+
+a 
+{
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+
+
+
+img
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* Container */
+
+.container
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $mobile) {
+        width: mobile;}
+    
+   
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: $desctop;
+    }
+
+
+    
+
+}
+
+
+
+
+
+.list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* невидимые заголовки */
+.visually-hidden
+{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
