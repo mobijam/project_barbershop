@@ -1,134 +1,7 @@
-//   adaptive container
-
-$mobile: 448px;
-$mobile-top: 719px;
-$tablet: 720px;
-$tablet-top: 1199px;
-$desctop: 1200px;
-
-
-
-//    text color
-$main-text-color: #ffffff;
-$primery-text-color: #555555;
-$secondary-text-color: #9da4bd;
-$title-text-color: #303030;
-$subtitle-text-color: rgba(157, 164, 189, 0.6);
-$accent-color: #ff6c00;
-
-// background-color
-
-
- $main-bg-color: #FFFFFF;
- $secondary-bg-color: #191C26;
- $accent-bg-color: #F7F7F7;
- $primery-bg-color: #E5E5E5;
-
-
-// font-family
- $main-font-family: 'Open Sans', sans-serif;
- $title-font-family: 'Raleway', sans-serif;
- 
-
-
-// font-weight
-$font-weight-normal: 400;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
-
-// letter-spacing
-$main-letter-spacing: 0.02em;
-$title-letter-spacing: 0.05em;
-$subtitle-letter-spacing: 0.01em;
-
-// mobile & tablet
-$hero-font-size-mobile: 48px;
-$hero-line-height-mobile: 1.17;
-
-$title-font-size-mobile: 28px;
-$title-line-height-mobile: 1.18;
-
-$main-font-size-mobile: 16px;
-$main-line-height-mobile: 1.63;
-
-$accent-font-size-mobile: 14px;
-$accent-line-height-mobile: 2.14;
-
-// desctop
-$hero-font-size: 72px;
-$hero-line-height: 1.18;
-
-$title-font-size: 42px;
-$title-line-height: 1.17;
-
-$main-font-size: 18px;
-$main-line-height: 1.67;
-
-$secondary-font-size: 12px;
-$secondary-line-height: 1.33;
-
-$subtitle-font-size: 14px;
-$subtitle-line-height: 1.86;
-
-$small-font-size: 11px;
-$small-line-height: 1.36;
-
-// buttons
-$btn-font-size: 12px;
-$btn-line-height: 1.33;
-$btn-font-weight: 600;
-$btn-letter-spacing: 0.09em;
-$btn-main-color: #ffffff;
-$btn-accent-color: #303030;
-
-// cubic-bezier
-
-$main-transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
-
-body
-{
-    font-family: $main-font-family;  
-}
-
-a 
-{
-    text-decoration: none;
-}
-
-p {
-    margin: 0;
-    padding: 0;
+.footer-flex {
+@media screen and (min-width: $desctop) {
+    display: flex;
   }
-  
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-
-
-/* Container */
-
-.container {
-    
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @media screen and (min-width: $mobile) {
-        width: $mobile;}
-    
-   
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-        
-    }
-
-    @media screen and (min-width: $desctop) {
-        width: $desctop;
-    }
 }
 
 .footer-section {
@@ -142,6 +15,7 @@ ul {
     }
       
     @media screen and (min-width: 1200px) {
+      min-width: 50%;
       padding-top: 130px;
       padding-bottom: 130px;
     }
@@ -150,6 +24,7 @@ ul {
 .online-form {
     background-color: $secondary-bg-color;
 }
+
 
 .footer-title {
     margin-bottom: 44px;
@@ -161,7 +36,11 @@ ul {
     line-height: 49px;
     text-align: center;
     letter-spacing: 0.05em;
-    color: #FFFFFF;   
+    color: #FFFFFF; 
+    
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+      }
 }
 
 .contact-title {
@@ -174,12 +53,34 @@ form {
     align-items: center;
     justify-content: center;
     max-width: 100%;
+
+    @media screen and (min-width: $tablet) {
+        &:not(:last-child) {
+            display: flex;
+        }
+        
+    }
+    @media screen and (min-width: $desctop) {
+        align-items: flex-start;
+    }
 }
 
 label {
     display: inline-block;
     position: relative;
     margin-bottom: 44px;
+}
+
+.tablet-flex {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        max-width: 330px;
+
+        & + label {
+            margin-right: 30px;
+        }
+    }
 }
 
 .modal-input {
@@ -223,6 +124,10 @@ label {
   textarea {
       min-height: 75px;
       margin-bottom: 44px;
+
+      @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
+          width: 690px;
+      }
   }
 
 // Кнопка
@@ -257,9 +162,6 @@ label {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
     background-image: url('../images/bgfooter480.png');
 
     @media screen and (min-width: $mobile) {
@@ -275,6 +177,7 @@ label {
     }
 
     @media screen and (min-width: $tablet) {
+        
         background-image: url('../images/bgfooter768.png');
 
         @media screen and (min-device-pixel-ratio: 2),
@@ -304,6 +207,7 @@ label {
 
 .footer-icon {
     display: inline-flex;
+    align-items: baseline;
     justify-content: center;
     margin-right: 16px;
     
@@ -314,9 +218,69 @@ label {
     fill: transparent;
 }
 
-.address {
-    display: flex;
-    align-items: center;
+address {
+    display: inline-flex;
+    align-items: baseline;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 44px;
+
+    @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
+        margin-right: 31px; 
+        width: 270px;
+        margin-bottom: 0;
+     }
+
+    a {
+        margin-bottom: 20px;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.62;
+
+        letter-spacing: 0.02em;
+
+        color: #9DA4BD;
+        text-decoration: none;
+    }
+
+}
+
+.barb-contacts {
+    text-decoration: underline;
+}
+
+.time-sub-title {
+    margin-bottom: 20px;
+    display: inline-flex;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.time {
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 1.67;
+
+letter-spacing: 0.02em;
+
+color: #9DA4BD;
+}
+
+.flex-contact {
+    @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
+       display: flex; 
+    }
 }
