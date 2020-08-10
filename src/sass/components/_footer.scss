@@ -1,29 +1,32 @@
+.footer
+{
+    background-color: $secondary-bg-color;
+    min-width: 448px;
+    
+}
+
+
 .footer-flex {
+    margin: 0 auto;
 @media screen and (min-width: $desctop) {
     display: flex;
+    width: $desctop;
+    
   }
 }
 
 .footer-section {
-    padding-top: 84px;
-    padding-bottom: 84px;
-    min-width: 447px;
-      
-    @media screen and (min-width: $tablet) {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-      
+   
     @media screen and (min-width: 1200px) {
       min-width: 50%;
-      padding-top: 130px;
-      padding-bottom: 130px;
+      
+    
     }
 }
 
-.online-form {
-    background-color: $secondary-bg-color;
-}
+// .online-form {
+  
+// }
 
 
 .footer-title {
@@ -48,16 +51,24 @@
    }
 
 form {
-    display: flex;
+
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 100%;
 
-    @media screen and (min-width: $tablet) {
-        &:not(:last-child) {
-            display: flex;
+    @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
+         text-align: center;
+         display: flex;
+           
         }
+
+
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        
         
     }
     @media screen and (min-width: $desctop) {
@@ -69,6 +80,18 @@ label {
     display: inline-block;
     position: relative;
     margin-bottom: 44px;
+    
+    &:not(:last-child){
+
+        @media screen and (min-width: $tablet) {
+            margin-right: 30px;
+        }
+    }
+
+    
+
+
+    
 }
 
 .tablet-flex {
@@ -81,12 +104,36 @@ label {
             margin-right: 30px;
         }
     }
+
+    @media screen and (min-width: $desctop)
+    {
+        max-width: 270px;
+    }
+
+
+
 }
+
+
 
 .modal-input {
     
     display: inline-block;   
-    min-width: 418px;
+    @media screen and (max-width:$mobile-top) {
+        width: 418px;
+    }
+    
+    @media screen and (min-width:$tablet) {
+        min-width: 330px;
+        &:not(:last-child)
+        {margin-right:30px }
+   }
+
+   @media screen and (min-width:$desctop) {
+    min-width: 270px;
+}
+
+
     min-height: 25px;
     padding-bottom: 9px;
     padding-top: 0;
@@ -97,11 +144,24 @@ label {
     border-bottom: 1px solid $subtitle-text-color;
     background-color: transparent;
     resize: none;
+    color: $main-text-color;
   
     &:focus-within, &:not(:placeholder-shown) {
       border-color: $main-text-color;
     }
   }
+
+
+  .modal-input-tel
+  {
+    @media screen and (min-width:$desctop) {
+        min-width: 260px;
+  }
+  }
+
+
+
+
 
   .input-label {
     position: absolute;
@@ -127,6 +187,11 @@ label {
 
       @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
           width: 690px;
+      }
+
+      @media screen and (min-width: $desctop)
+      {
+          width: 560px;
       }
   }
 
@@ -155,14 +220,11 @@ label {
     }
   }
 
-
-.contacts-form {
-    background-color: $secondary-bg-color;
+  .footer-background
+  {
+    background-image: url('../images/bgfooter480.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100%;
-    background-image: url('../images/bgfooter480.png');
 
     @media screen and (min-width: $mobile) {
         max-width: 100%;
@@ -193,6 +255,7 @@ label {
     @media screen and (min-width: $desctop) {
         background-image: url('../images/bgfooter960.png');
         min-height: 600px;
+        width: 625px;
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
@@ -203,6 +266,19 @@ label {
             }
         }
     }    
+
+  }
+
+
+
+.contacts-form {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+    
+    
 }
 
 .footer-icon {
@@ -210,6 +286,8 @@ label {
     align-items: baseline;
     justify-content: center;
     margin-right: 16px;
+ 
+    
     
     cursor: pointer;
     width: 24px;
@@ -284,3 +362,155 @@ color: #9DA4BD;
        display: flex; 
     }
 }
+
+.textaria-footer
+{
+    min-height: 76px;
+    min-width: 418px;
+    resize: none;
+    color: $main-text-color;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+.footer-area
+{
+    @media screen and (max-width: $mobile-top) {
+        text-align: center;
+     }
+    
+}
+
+.dash-footer
+{
+    background-color: rgba(157, 164, 189, 0.4);
+}
+
+.social-media
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    
+    
+    // @media screen and (max-width:$mobile-top){
+    //     min-height: 138px;
+    // }
+}
+
+
+.links-list
+{
+    display: flex;
+    
+}
+
+.hero-line
+{
+    background-color:  $secondary-bg-color;
+    @media screen and (max-width: $mobile-top){
+        margin-right: 40px;
+    }
+}
+
+.footer-but-backgr
+{
+    background-color:  $accent-bg-color;
+    
+    
+}
+
+.copyright
+{
+   color: #9DA4BD;
+   font-size: $small-font-size;
+   line-height: $small-line-height;
+   font-weight: $font-weight-semi-bold;
+   letter-spacing: 0.02;
+
+   
+   
+}
+
+.fotter-buttom-box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   @media screen and (max-width:$mobile-top){
+        padding-bottom: 25px;
+    }
+}
+
+
+.footer-links-list:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+.sidebar-link
+{
+color: $title-text-color;
+font-size: $small-font-size;
+   line-height: $small-line-height;
+   font-weight: $font-weight-semi-bold;
+   letter-spacing: 0.02;
+
+}
+
+
+.copy-box-footer
+
+{
+    @media screen and (max-width:$mobile-top){
+        padding-top: 25px;
+    }
+}
+
+.container-footer
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    @media screen and (min-width:$mobile){
+        width: $mobile;
+       
+    }
+    @media screen and (min-width:$tablet){
+        width: $tablet;
+        padding-top: 98px;
+        padding-bottom: 98px;
+    }
+
+    @media screen and (min-width:$desctop){
+        width: 600px;
+        padding-top: 130px;
+        padding-bottom: 130px;
+        
+
+        
+    
+       
+    }
+
+
+
+}
+
+.subcintainer-footer
+{
+    @media screen and (min-width:$desctop)
+    {
+        padding-left: 100px;
+    }
+
+}
+

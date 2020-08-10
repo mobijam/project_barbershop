@@ -194,9 +194,14 @@
   text-decoration: none;
   border-radius: 50px;
   border: 1px solid #ff6c00;
+  
   width: 160px;
   height: 44px;
-  padding: 12px 20px;
+//   padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &:hover,
   &:focus{
       background-color: $accent-color;
@@ -211,6 +216,9 @@
 
     @media screen and (min-width:$tablet) {
         margin-bottom: 15px;
+    }
+    @media screen and (min-width:$desctop) {
+        margin-bottom: 0px;
     }
    
 }
