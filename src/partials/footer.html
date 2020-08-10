@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+  </head>
+
+  <body>
+    <!-- footer -->
+    <footer class="footer">
+      <section class="section-footer top">
+        <!-- footer-form -->
+        <div class="container-form">
+          <h2 class="footer-title form">Онлайн-запись</h2>
+          <div class="footer-form">
+            <label class="footer-label">
+              <input
+                class="footer-input"
+                type="text"
+                name="name"
+                placeholder="ИМЯ&ast;"
+              />
+            </label>
+            <label class="footer-label">
+              <input
+                class="footer-input"
+                type="tel"
+                name="tel"
+                placeholder="ТЕЛЕФОН&ast;"
+              />
+            </label>
+            <label class="footer-label">
+              <textarea
+                class="footer-input"
+                name="comment"
+                rows="5"
+                placeholder="СООБЩЕНИЕ"
+              ></textarea>
+            </label>
+          </div>
+          <button class="footer-button" type="submit">ОТПРАВИТЬ</button>
+        </div>
+        <!-- footer-contacts -->
+
+        <div class="container-contacts">
+          <div class="footer-info">
+            <h2 class="footer-title contacts">Контакты</h2>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#map-pin"></use>
+                </svg>
+                <a class="footer-link adress" href=""
+                  >ул. Васильковая, 7А
+                  <span class="visually-hidden">,</span>Киев, 08132</a
+                >
+              </li>
+              <li class="footer-item">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#phone"></use>
+                </svg>
+                <a class="footer-link" href="call:+380441111111"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li class="footer-item">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                <a class="footer-link mail" href="mailto:barbershop@email.com"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- footer-working-time -->
+          <div class="footer-info">
+            <h3 class="footer-subtitle">
+              <span class="dash"></span>ВРЕМЯ РАБОТЫ
+            </h3>
+            <p class="subtitle-text">Ежедневно с 9:00 до 22:00</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer-socials -->
+      <!-- <div class="background-bottom"> -->
+
+      <section class="section-footer bottom">
+        <div class="container-socials">
+          <ul class="footer-bottom-list">
+            <li class="footer-bottom-item">
+              <span class="dash bottom"></span>
+              <a class="footer-socials" href="">Instagram</a>
+            </li>
+            <li class="footer-bottom-item">
+              <a class="footer-socials" href="">Youtube</a>
+            </li>
+          </ul>
+          <span class="copyright-text">&copy; Copyright 2020</span>
+        </div>
+      </section>
+
+      <!-- </div> -->
+    </footer>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
+</html>
