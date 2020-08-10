@@ -15,6 +15,7 @@
     }
       
     @media screen and (min-width: 1200px) {
+      min-width: 50%;
       padding-top: 130px;
       padding-bottom: 130px;
     }
@@ -52,12 +53,34 @@ form {
     align-items: center;
     justify-content: center;
     max-width: 100%;
+
+    @media screen and (min-width: $tablet) {
+        &:not(:last-child) {
+            display: flex;
+        }
+        
+    }
+    @media screen and (min-width: $desctop) {
+        align-items: flex-start;
+    }
 }
 
 label {
     display: inline-block;
     position: relative;
     margin-bottom: 44px;
+}
+
+.tablet-flex {
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        max-width: 330px;
+
+        & + label {
+            margin-right: 30px;
+        }
+    }
 }
 
 .modal-input {
@@ -101,6 +124,10 @@ label {
   textarea {
       min-height: 75px;
       margin-bottom: 44px;
+
+      @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
+          width: 690px;
+      }
   }
 
 // Кнопка
@@ -200,6 +227,8 @@ address {
 
     @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
         margin-right: 31px; 
+        width: 270px;
+        margin-bottom: 0;
      }
 
     a {
