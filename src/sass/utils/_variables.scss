@@ -1,9 +1,12 @@
 //   adaptive container
-$mobile: 480px;
-$mobile-top: 767px;
-$tablet: 768px;
-$tablet-top: 1279px;
-$desctop: 1280px;
+
+   $mobile: 448px;
+   $mobile-top: 719px;
+   $tablet: 720px;
+   $tablet-top: 1199px;
+   $desctop: 1200px;
+   
+
 
 //    text color
 $main-text-color: #ffffff;
@@ -15,13 +18,18 @@ $accent-color: #ff6c00;
 
 // background-color
 
-$main-bg-color: #ffffff;
-$secondary-bg-color: #191c26;
-$accent-bg-color: #f7f7f7;
+
+    $main-bg-color: #FFFFFF;
+    $secondary-bg-color: #191C26;
+    $accent-bg-color: #F7F7F7;
+    $primery-bg-color: #E5E5E5;
+
 
 // font-family
-$main-font-family: Open Sans, sans serif;
-$title-font-family: Raleway;
+    $main-font-family: 'Open Sans', sans-serif;
+    $title-font-family: 'Raleway', sans-serif;
+    
+
 
 // font-weight
 $font-weight-normal: 400;
