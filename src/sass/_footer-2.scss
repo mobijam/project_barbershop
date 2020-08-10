@@ -314,9 +314,13 @@ label {
     fill: transparent;
 }
 
-.address {
-    display: flex;
-    align-items: center;
+address {
+    display: inline-flex;
+    align-items: baseline;
     justify-content: center;
     flex-direction: column;
+
+    a {
+        text-decoration: none;
+    }
 }
