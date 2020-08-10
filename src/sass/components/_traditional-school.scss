@@ -1,38 +1,7 @@
-// Общие стили
-body {
-  margin: 0;
-  font-family: Open Sans;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .traditional-school {
+  min-width: 447px;
   padding: 84px 0;
+  background-color: $main-bg-color;
 
   @media screen and (min-width: $tablet) {
     padding: 100px 0;
@@ -40,6 +9,8 @@ img {
 
   @media screen and (min-width: $desctop) {
     height: 582px;
+    width: 1280px;
+    margin: 0 auto;
   }
 }
 
@@ -107,6 +78,7 @@ img {
 }
 
 .traditional-school-title {
+  margin: 0;
   margin-bottom: 20px;
   font-family: Raleway;
   font-weight: $font-weight-bold;
@@ -128,7 +100,6 @@ img {
 
 // список преимуществ в иконках
 
-
 .advantages-box {
   height: 331px;
   @media screen and (min-width: $tablet) {
@@ -140,7 +111,6 @@ img {
     top: 21px;
   }
 }
-
 
 .advantages-list {
   display: flex;

@@ -1,44 +1,3 @@
-// Общие стили
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-img {
-  display: block;
-    width: 100%;
-    height: auto;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media screen and (min-width: 448px) {
-      width: 448px;  
-  }
-
-  @media screen and (min-width: 720px) {
-      width: 720px;  
-  }
-
-  @media screen and (min-width: 1200px) {
-      width: 1200px;
-      margin-left: auto;
-      margin-right: auto; 
-  }    
-}
-
 .team-box {
   // @media screen and (min-width: 448px) and (max-width: 719px) {
   //   padding-left: 16px;
@@ -47,8 +6,8 @@ img {
 
   @media screen and (min-width: 720px) and (max-width: 1199px) {
     padding-left: 144px;
-    padding-right: 144px;  
-  } 
+    padding-right: 144px;
+  }
 }
 
 // Секция мастеров
@@ -63,9 +22,11 @@ img {
     padding-bottom: 100px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desctop) {
     padding-top: 130px;
     padding-bottom: 130px;
+    width: 1280px;
+    margin: 0 auto;
   }
 }
 
@@ -82,13 +43,13 @@ img {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  
+
   @media screen and (max-width: 447px) {
     font-size: 7px;
   }
 }
 
-.dash{
+.dash {
   display: inline-flex;
   margin-bottom: 5px;
   margin-right: 20px;
@@ -131,18 +92,18 @@ img {
   }
 
   @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-      .master-card:not(:last-child){
-        margin-right: 30px;
-      }
+    .master-card:not(:last-child) {
+      margin-right: 30px;
+    }
 
-      .master-card {
-        width: calc((100% - 2 * 30px) / 3);
-      }
+    .master-card {
+      width: calc((100% - 2 * 30px) / 3);
+    }
   }
 }
 
@@ -155,7 +116,6 @@ img {
     margin-right: 0;
     margin-bottom: 30px;
   }
-
 }
 
 //  Имя сотрудника
@@ -179,8 +139,8 @@ img {
 
   font-size: 14px;
   line-height: 1.36;
-  letter-spacing: 0.02em;    
-  text-align: center;    
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 // Список иконок социальных сетей
@@ -189,9 +149,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   li:not(:last-child) {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -206,13 +166,14 @@ img {
 
   border-radius: 50%;
   transition: all $main-transition-timing;
- 
+
   fill: $title-text-color;
   background-color: $main-bg-color;
 
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     fill: $accent-color;
   }
 }

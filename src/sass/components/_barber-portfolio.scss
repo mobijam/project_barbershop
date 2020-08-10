@@ -1,94 +1,94 @@
 // Секция мастеров
 .portfolio {
   min-width: 447px;
-    background-color: $accent-bg-color;
-    padding-top: 84px;
-    padding-bottom: 84px;
-  
-    @media screen and (min-width: $tablet) {
-      padding-top: 100px;
-      padding-bottom: 101px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 130px;
-      padding-bottom: 130px;
-    }
+  background-color: $accent-bg-color;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 101px;
   }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
 
 .portfolio-box {
-    @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+  @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  
-  // Заголовок секции
-  .portfolio-sub-title {
+}
+
+// Заголовок секции
+.portfolio-sub-title {
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: $title-text-color;
+
+  font-weight: $font-weight-semi-bold;
+  font-size: 11px;
+  line-height: 1.91;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 447px) {
+    font-size: 7px;
+  }
+}
+
+.sub-block {
+  @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
     display: inline-flex;
-    margin-top: 0;
-    margin-bottom: 20px;
-  
-    color: $title-text-color;
-  
-    font-weight: $font-weight-semi-bold;
-    font-size: 11px;
-    line-height: 1.91;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    
-    @media screen and (max-width: 447px) {
-      font-size: 7px;
+    width: 284px;
+  }
+}
+
+.portfolio-list {
+  @media screen and (max-width: $mobile-top) {
+    li:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
 
-  .sub-block {
-    @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
-      display: inline-flex;
-      width: 284px;
+  @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+
+    li:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    li:nth-child(-n + 2) {
+      margin-bottom: 30px;
     }
   }
 
-  .portfolio-list {
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    @media screen  and (max-width: $mobile-top) {
-      li:not(:last-child) {
-        margin-bottom: 30px;
-      }
+    li {
+      width: calc((100% - 3 * 30px) / 4);
     }
-    
 
-    @media screen  and (min-width: $tablet) and (max-width: $tablet-top) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-
-      li {
-          width: calc((100% - 1 * 30px) / 2);
-      }
-
-      li:nth-child(odd) {
-        margin-right: 30px;
-      }
-
-      li:nth-child(-n +2) {
-        margin-bottom: 30px;
-      }
-    }    
-  
-    @media screen and (min-width: $desctop) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-  
-        li {
-          width: calc((100% - 3 * 30px) / 4);
-        }
-
-        li:not(:last-child) {
-          margin-right: 30px;
-        }
+    li:not(:last-child) {
+      margin-right: 30px;
     }
   }
+}

@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 84px;
 }
 
 @media screen and (min-width: $desctop) {
@@ -29,6 +28,7 @@
   .section {
     padding-top: 130px;
     padding-bottom: 130px;
+    width: 1280px;
   }
 }
 @media screen and (min-width: $tablet) {
@@ -44,20 +44,19 @@
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  
+
   padding-left: 31px;
   padding-right: 31px;
 
-  @media screen and(min-width:$mobile){
+  @media screen and(min-width:$mobile) {
     width: $mobile;
   }
 
-  @media screen and(min-width:$tablet){
+  @media screen and(min-width:$tablet) {
     width: $tablet;
     padding-left: 15px;
     padding-right: 15px;
   }
-
 }
 
 @media screen and (min-width: $desctop) {
