@@ -56,6 +56,7 @@ img {
   background-color: $accent-bg-color;
   padding-top: 84px;
   padding-bottom: 84px;
+  min-width: 447px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 100px;
