@@ -1891,7 +1891,7 @@ img {
 }
 @media screen and (min-width: 448px) {
   .container {
-    width: mobile;
+    width: 448px;
   }
 }
 @media screen and (min-width: 720px) {
