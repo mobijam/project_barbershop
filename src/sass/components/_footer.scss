@@ -294,7 +294,27 @@ label {
     height: 24px;
     stroke: $secondary-text-color;
     fill: transparent;
+
+    
 }
+
+.barb-contacts:hover .footer-icon
+{
+    fill: currentColor;
+}
+
+.address-phone-numb:hover
+{
+color: $accent-color;
+}
+
+.address-phone-numb:hover .footer-icon 
+{
+    fill: currentColor;
+}
+
+
+
 
 address {
     display: inline-flex;
@@ -328,6 +348,11 @@ address {
 
 .barb-contacts {
     text-decoration: underline;
+    &:hover,
+    &:focus
+    {
+        color: $accent-color;
+    }
 }
 
 .time-sub-title {
@@ -460,6 +485,12 @@ font-size: $small-font-size;
    line-height: $small-line-height;
    font-weight: $font-weight-semi-bold;
    letter-spacing: 0.02;
+   &:hover
+   {
+       color: $accent-color;
+   }
+   
+
 
 }
 
