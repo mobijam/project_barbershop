@@ -8,11 +8,11 @@
       <form class="form" autocomplete="off">     
         <div class="tablet-flex">
         <label class="label">
-          <input type="text" name="name" placeholder="имя" class="modal-input">
+          <input type="text" name="name" placeholder="имя &ast;" class="modal-input" required>
           <!-- <span class="input-label">Имя*</span> -->
         </label>
         <label class="label">
-          <input type="tel" name="tel" placeholder="телефон" class="modal-input modal-input-tel">
+          <input type="tel" name="tel" placeholder="телефон &ast;" class="modal-input modal-input-tel" required>
           <!-- <span class="input-label">Телефон*</span> -->
         </label>
       </div>
@@ -39,7 +39,7 @@
       <div class="flex-contact">
       <address>
         <a href="" class="map-link"><svg class="footer-icon"><use href="./images/sprite.svg#map-pin"></use></svg>ул. Васильковая, 7А, Киев, 08132</a>
-        <a href="tel:+380441111111" ><svg class="footer-icon"><use href="./images/sprite.svg#phone"></use></svg>+38 044 111 11 11</a>
+        <a id="contacts" href="tel:+380441111111"><svg class="footer-icon"><use href="./images/sprite.svg#phone"></use></svg>+38 044 111 11 11</a>
         <a href="mailto:barbershop@email.com" class="barb-contacts"><svg class="footer-icon"><use href="./images/sprite.svg#envelope"></use></svg>barbershop@email.com</a>
       </address>
       <div class="working-time">

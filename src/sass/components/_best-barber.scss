@@ -193,9 +193,12 @@ img {
 
 // Кнопка
 .button-online {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 13.2px;
   padding-top: 13.2px;
-  min-width: 160px;
+  width: 160px;
   height: 44px;
 
   font-weight: $font-weight-semi-bold;
