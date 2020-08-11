@@ -1776,7 +1776,7 @@ address a {
   background-color: rgba(157, 164, 189, 0.4);
 }
 
-.social-media {
+.social-media-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
