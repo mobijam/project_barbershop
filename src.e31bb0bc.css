@@ -1681,6 +1681,18 @@ textarea {
   fill: transparent;
 }
 
+.barb-contacts:hover .footer-icon {
+  fill: currentColor;
+}
+
+.address-phone-numb:hover {
+  color: #ff6c00;
+}
+
+.address-phone-numb:hover .footer-icon {
+  fill: currentColor;
+}
+
 address {
   display: inline-flex;
   align-items: baseline;
@@ -1709,6 +1721,9 @@ address a {
 
 .barb-contacts {
   text-decoration: underline;
+}
+.barb-contacts:hover, .barb-contacts:focus {
+  color: #ff6c00;
 }
 
 .time-sub-title {
@@ -1815,6 +1830,9 @@ address a {
   line-height: 1.36;
   font-weight: 600;
   letter-spacing: 0.02;
+}
+.sidebar-link:hover {
+  color: #ff6c00;
 }
 
 @media screen and (max-width: 719px) {
