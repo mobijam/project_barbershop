@@ -1,96 +1,13 @@
-// Общие стили
-body {
-  margin: 0;
-  font-family: Open Sans;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.traditional-school {
-  padding: 84px 0;
-
-  @media screen and (min-width: $tablet) {
-    padding: 100px 0;
-  }
-
-  @media screen and (min-width: $desctop) {
-    height: 582px;
-  }
-}
-
-.container-school {
-  width: 448px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-
-  @media screen and (min-width: $desctop) {
+.school {
+  @media screen and (min-width: $desktop) {
     position: relative;
-    width: $desctop;
-    height: 382px;
   }
-}
-
-.dash {
-  display: inline-flex;
-  //   margin-bottom: 5px;
-  margin-right: 20px;
-  width: 60px;
-  height: 1px;
-  background-color: $title-text-color;
-
-  //   @media screen and (max-width: 479px) {
-  //     width: 30px;
-  //     margin-right: 10px;
-  //     margin-bottom: 2px;
-  //   }
 }
 
 .sub-title {
-  display: inline-flex;
-  //   margin-bottom: 20px;
-
-  color: $title-text-color;
-  font-weight: $font-weight-semi-bold;
+  @extend %sub-title;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.positioning-sub-title {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 // Заголовок + параграф
@@ -100,21 +17,16 @@ img {
     width: 500px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-top: 30px;
     margin-left: 640px;
   }
 }
 
 .traditional-school-title {
+  @extend %title;
   margin-bottom: 20px;
-  font-family: Raleway;
-  font-weight: $font-weight-bold;
   font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-
-  color: $title-text-color;
 }
 
 .traditional-school-text {
@@ -123,7 +35,7 @@ img {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: $primery-text-color;
+  color: $primary-text-color;
 }
 
 // список преимуществ в иконках
@@ -134,13 +46,12 @@ img {
   @media screen and (min-width: $tablet) {
     position: relative;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     position: absolute;
     left: 140px;
     top: 21px;
   }
 }
-
 
 .advantages-list {
   display: flex;

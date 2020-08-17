@@ -1,0 +1,51 @@
+%sub-title {
+    display: inline-flex;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $title-text-color;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    @media screen and (max-width: $pre-mobile) {
+      font-size: 7px;
+    }
+}
+
+%title {
+  margin-top: 0;
+
+  color: $title-text-color;
+
+  font-family: $title-font-family;
+  font-weight: $font-weight-bold;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+%btn {
+  @include centeredFlex();
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 160px;
+    height: 40px;
+  
+    font-weight: $font-weight-semi-bold;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-decoration: none;
+    text-transform: uppercase;
+     
+    border-radius: 25px;
+    border: 1px solid $accent-color;
+
+    background-color: transparent;
+    cursor: pointer;
+  
+    &:hover, &:focus {
+      color: $main-text-color;
+      background-color: $accent-color;
+    }
+}

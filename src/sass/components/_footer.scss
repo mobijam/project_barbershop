@@ -1,32 +1,22 @@
-.footer
-{
+.footer {
     background-color: $secondary-bg-color;
-    min-width: 448px;
-    
+    min-width: $mobile;
 }
-
 
 .footer-flex {
     margin: 0 auto;
-@media screen and (min-width: $desctop) {
-    display: flex;
-    width: $desctop;
-    
-  }
-}
 
-.footer-section {
-   
-    @media screen and (min-width: 1200px) {
-      min-width: 50%;
-      
-    
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        width: $desktop;  
     }
 }
 
-// .online-form {
-  
-// }
+.footer-section {
+    @media screen and (min-width: $desktop) {
+      min-width: 50%;
+    }
+}
 
 
 .footer-title {
@@ -50,28 +40,22 @@
     margin-bottom: 40px;
    }
 
-form {
-
-    
+form {  
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 100%;
 
     @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
-         text-align: center;
-         display: flex;
-           
-        }
-
-
+        text-align: center;
+        display: flex;     
+    }
 
     @media screen and (min-width: $tablet) {
-        display: block;
-        
-        
+        display: block; 
     }
-    @media screen and (min-width: $desctop) {
+
+    @media screen and (min-width: $desktop) {
         align-items: flex-start;
     }
 }
@@ -87,11 +71,6 @@ label {
             margin-right: 30px;
         }
     }
-
-    
-
-
-    
 }
 
 .tablet-flex {
@@ -105,35 +84,13 @@ label {
         }
     }
 
-    @media screen and (min-width: $desctop)
-    {
+    @media screen and (min-width: $desktop) {
         max-width: 270px;
     }
 
-
-
 }
-
-
 
 .modal-input {
-    
-    display: inline-block;   
-    @media screen and (max-width:$mobile-top) {
-        width: 418px;
-    }
-    
-    @media screen and (min-width:$tablet) {
-        min-width: 330px;
-        &:not(:last-child)
-        {margin-right:30px }
-   }
-
-   @media screen and (min-width:$desctop) {
-    min-width: 270px;
-}
-
-
     min-height: 25px;
     padding-bottom: 9px;
     padding-top: 0;
@@ -145,25 +102,36 @@ label {
     background-color: transparent;
     resize: none;
     color: $main-text-color;
+    
+    display: inline-block;   
+    @media screen and (max-width: $mobile-top) {
+        width: 418px;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        min-width: 330px;
+        
+        &:not(:last-child)
+        {margin-right:30px }
+    }
+
+    @media screen and (min-width: $desktop) {
+        min-width: 270px;
+    }  
   
     &:focus-within, &:not(:placeholder-shown) {
       border-color: $main-text-color;
     }
-  }
+}
 
 
-  .modal-input-tel
-  {
-    @media screen and (min-width:$desctop) {
+.modal-input-tel {
+    @media screen and (min-width: $desktop) {
         min-width: 260px;
-  }
-  }
+    }
+}
 
-
-
-
-
-  .input-label {
+.input-label {
     position: absolute;
     top: 0;
     left: 0;
@@ -179,21 +147,20 @@ label {
     &:focus-within, &:not(:placeholder-shown) {
         color: $main-text-color;
     }
-  }
+}
 
-  textarea {
-      min-height: 75px;
-      margin-bottom: 44px;
+textarea {
+    min-height: 75px;
+    margin-bottom: 44px;
 
-      @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
-          width: 690px;
-      }
+    @media screen and (min-width: $tablet) and (max-width: $tablet-top) {
+        width: 690px;
+    }
 
-      @media screen and (min-width: $desctop)
-      {
-          width: 560px;
-      }
-  }
+    @media screen and (min-width: $desktop) {
+        width: 560px;
+    }
+}
 
 // Кнопка
 .button-send {
@@ -220,8 +187,7 @@ label {
     }
   }
 
-  .footer-background
-  {
+  .footer-background {
     background-image: url('../images/bgfooter480.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -252,7 +218,7 @@ label {
         }
     }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
         background-image: url('../images/bgfooter960.png');
         min-height: 600px;
         width: 625px;
@@ -272,13 +238,10 @@ label {
 
 
 .contacts-form {
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100%;
-    
-    
+    min-height: 100%; 
 }
 
 .footer-icon {
@@ -287,33 +250,24 @@ label {
     justify-content: center;
     margin-right: 16px;
  
-    
-    
     cursor: pointer;
     width: 24px;
     height: 24px;
     stroke: $secondary-text-color;
-    fill: transparent;
-
-    
+    fill: transparent; 
 }
 
-.barb-contacts:hover .footer-icon
-{
+.barb-contacts:hover .footer-icon {
     fill: currentColor;
 }
 
-.address-phone-numb:hover
-{
-color: $accent-color;
+.address-phone-numb:hover {
+    color: $accent-color;
 }
 
-.address-phone-numb:hover .footer-icon 
-{
+.address-phone-numb:hover .footer-icon {
     fill: currentColor;
 }
-
-
 
 
 address {
@@ -348,9 +302,8 @@ address {
 
 .barb-contacts {
     text-decoration: underline;
-    &:hover,
-    &:focus
-    {
+
+    &:hover, &:focus {
         color: $accent-color;
     }
 }
@@ -372,14 +325,13 @@ address {
 
 .time {
     font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 1.67;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
 
-letter-spacing: 0.02em;
-
-color: #9DA4BD;
+    color: #9DA4BD;
 }
 
 .flex-contact {
@@ -388,8 +340,7 @@ color: #9DA4BD;
     }
 }
 
-.textaria-footer
-{
+.textaria-footer {
     min-height: 76px;
     min-width: 418px;
     resize: none;
@@ -401,147 +352,110 @@ color: #9DA4BD;
 }
 
 
-.footer-area
-{
+.footer-area {
     @media screen and (max-width: $mobile-top) {
         text-align: center;
-     }
-    
+     }  
 }
 
-.dash-footer
-{
+.dash-footer {
     background-color: rgba(157, 164, 189, 0.4);
 }
 
-.box-footbutn-link
-{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+.box-footbutn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 44px;
     padding-bottom: 44px;
-    
-    
-    // @media screen and (max-width:$mobile-top){
-    //     min-height: 138px;
-    // }
 }
 
 
-.links-list
-{
-    display: flex;
-    
+.links-list {
+    display: flex; 
 }
 
-.hero-line
-{
+.hero-line {
     background-color:  $secondary-bg-color;
     @media screen and (max-width: $mobile-top){
         margin-right: 40px;
     }
 }
 
-.footer-but-backgr
-{
-    background-color:  $accent-bg-color;
-    
-    
+.footer-but-backgr {
+    background-color:  $accent-bg-color;    
 }
 
-.copyright
-{
+.copyright {
    color: #9DA4BD;
    font-size: $small-font-size;
    line-height: $small-line-height;
    font-weight: $font-weight-semi-bold;
    letter-spacing: 0.02;
-
-   
-   
 }
 
-.fotter-buttom-box
-{
+.fotter-buttom-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   @media screen and (max-width:$mobile-top){
+
+    @media screen and (max-width:$mobile-top) {
         padding-bottom: 25px;
     }
 }
 
 
-.footer-links-list:not(:last-child)
-{
+.footer-links-list:not(:last-child) {
     margin-right: 40px;
 }
 
-.sidebar-link
-{
-color: $title-text-color;
-font-size: $small-font-size;
-   line-height: $small-line-height;
-   font-weight: $font-weight-semi-bold;
-   letter-spacing: 0.02;
-   &:hover
-   {
-       color: $accent-color;
+.sidebar-link {
+    color: $title-text-color;
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: 0.02;
+
+   &:hover {
+    color: $accent-color;
    }
-   
-
-
 }
 
 
-.copy-box-footer
-
-{
+.copy-box-footer {
     @media screen and (max-width:$mobile-top){
         padding-top: 25px;
     }
 }
 
-.container-footer
-{
+.container-footer {
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 84px;
     padding-bottom: 84px;
-    @media screen and (min-width:$mobile){
-        width: $mobile;
-       
+
+    @media screen and (min-width:$mobile) {
+        width: $mobile; 
     }
+
     @media screen and (min-width:$tablet){
         width: $tablet;
         padding-top: 98px;
         padding-bottom: 98px;
     }
 
-    @media screen and (min-width:$desctop){
+    @media screen and (min-width:$desktop){
         width: 600px;
         padding-top: 130px;
-        padding-bottom: 130px;
-        
-
-        
-    
-       
+        padding-bottom: 130px; 
     }
-
-
-
 }
 
-.subcintainer-footer
-{
-    @media screen and (min-width:$desctop)
-    {
+.subcintainer-footer {
+    @media screen and (min-width:$desktop) {
         padding-left: 100px;
     }
-
 }
 

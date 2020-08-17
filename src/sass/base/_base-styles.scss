@@ -1,0 +1,102 @@
+body {
+    font-family: $main-font-family;
+}
+// Обнуление начальных стилей
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+// Адаптивный контейнер
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;}
+    
+   
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+    }
+}
+
+// Секция контента
+.section {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  
+    @media screen and (min-width: $tablet) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+}
+
+// Невидимые заголовки 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+// Оформление подзаголовка секции
+.dash {
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: $title-text-color;
+  
+    @media screen and (max-width: $pre-mobile) {
+      width: 30px;
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+}
+
+// Кнопки
+
+.button-light {
+    @extend %btn;
+    color: $main-text-color; 
+}
+
+.button-online {
+    @extend %btn; 
+    color: $title-text-color;
+}

@@ -1,55 +1,28 @@
 // Секция мастеров
 .portfolio {
-  min-width: 447px;
+    min-width: $pre-mobile;
     background-color: $main-bg-color;
-    padding-top: 84px;
-    padding-bottom: 84px;
+}
   
-    @media screen and (min-width: $tablet) {
-      padding-top: 100px;
-      padding-bottom: 101px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 130px;
-      padding-bottom: 130px;
-    }
-  }
-
-.portfolio-box {
-    @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-  }
-  
-  // Заголовок секции
-  .portfolio-sub-title {
-    display: inline-flex;
-    margin-top: 0;
-    margin-bottom: 20px;
-  
-    color: $title-text-color;
-  
-    font-weight: $font-weight-semi-bold;
+// Подзаголовок секции
+.portfolio-sub-title {
+    @extend %sub-title;
     font-size: 11px;
     line-height: 1.91;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    
-    @media screen and (max-width: 447px) {
-      font-size: 7px;
-    }
-  }
+}
 
-  .sub-block {
+.sub-block {
     @media screen and (min-width: $mobile) and (max-width: $mobile-top) {
       display: inline-flex;
       width: 284px;
     }
-  }
+}
 
-  .portfolio-list {
+// Галерея работ
+.portfolio-list {
+    @media screen and (max-width: $pre-mobile) {
+      padding-left: 75px;
+    }
 
     @media screen  and (max-width: $mobile-top) {
       li:not(:last-child) {
@@ -57,13 +30,12 @@
       }
     }
     
+    @media screen and (min-width: $tablet) {
+      @include centeredFlex();
+      flex-wrap: wrap;
+    }
 
     @media screen  and (min-width: $tablet) and (max-width: $tablet-top) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-
       li {
           width: calc((100% - 1 * 30px) / 2);
       }
@@ -77,12 +49,7 @@
       }
     }    
   
-    @media screen and (min-width: $desctop) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-  
+    @media screen and (min-width: $desktop) {
         li {
           width: calc((100% - 3 * 30px) / 4);
         }
@@ -91,4 +58,4 @@
           margin-right: 30px;
         }
     }
-  }
+}
