@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://oleksandrhrubyi.github.io//project_barbershop",
+  "homepage": "https://mobijam.github.io/team-project-barbershop/",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/project_barbershop/",
+    "predeploy": "npm run build -- --public-url=/team-project-barbershop/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
